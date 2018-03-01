@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!--File Created By Python on {{ now }}-->
+<smses count="{{ sms_count }}" backup_set="{{ uuid }}" backup_date="{{ timestamp }}">
+  {% for sms in results %}
+    {% include 'sms_item.xml' %}
+  {% endfor %}
+</smses>

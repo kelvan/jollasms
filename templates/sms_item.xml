@@ -1,0 +1,1 @@
+<sms protocol="0" address="{{ sms.sender }}" date="{{ sms.date_received }}" type="{% if sms.received %}1{% else %}2{% endif %}" subject="null" body="{{ sms.body }}" toa="null" sc_toa="null" service_center="null" read="{% if sms.read %}true{% else %}false{% endif %}" status="-1" locked="0" date_sent="{{ sms.date_sent }}" />
